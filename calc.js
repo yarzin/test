@@ -13,12 +13,14 @@ function equation() {
         else if (discr < 0){
             document.getElementById('secondAnswer').value = "In this equation has no solution";
             document.getElementById('thirdAnswer').value = "-";
-    }   else if (discr == 0){
+    }   
+        else if (discr == 0){
             document.getElementById('secondAnswer').value = "In this equation can be one root";
             document.getElementById('thirdAnswer').value = ((- b - sqrDiscr) / (2 * a));
-    } else if (discr > 0){
-        document.getElementById('secondAnswer').value = "In this equation can be two roots";
-        document.getElementById('thirdAnswer').value = ((- b + sqrDiscr) / (2 * a)) + ";     " + ((- b - sqrDiscr) / (2 * a));
+    } 
+        else if (discr > 0){
+            document.getElementById('secondAnswer').value = "In this equation can be two roots";
+            document.getElementById('thirdAnswer').value = ((- b + sqrDiscr) / (2 * a)) + ";     " + ((- b - sqrDiscr) / (2 * a));
     }
 }
 function cancel() {
